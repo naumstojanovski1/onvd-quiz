@@ -256,8 +256,36 @@ const questions = [
             { text: "<table><row><td>Колона 1</td><td>Колона 2</td></row></table>", correct: false },
             { text: "<table><tr><th>Колона 1</th><th>Колона 2</th></tr></table>", correct: false },
             { text: "<table><td>Колона 1</td><td>Колона 2</td></table>", correct: false }
+        ]},
+
+    { question: "Кој селектор има повисока специфичност?", answers: [
+            { text: "#main", correct: true },
+            { text: ".menu .item", correct: false },
+            { text: "nav ul li a", correct: false },
+            { text: "a:hover", correct: false }
+        ]},
+    { question: "Што селектира p.intro + span?", answers: [
+            { text: "Сите span во p со класа intro", correct: false },
+            { text: "Првиот span веднаш по p.intro", correct: true },
+            { text: "Сите span елементи после p", correct: false },
+            { text: "Сите intro класи со span", correct: false }
+        ]},
+    { question: "Каков е ефектот на 'display: none' во CSS?", answers: [
+            { text: "Елементот ќе биде невидлив, но ќе го задржи својот простор", correct: false },
+            { text: "Елементот ќе биде невидлив и ќе го изгуби својот простор", correct: true },
+            { text: "Елементот ќе се прикаже како празен простор", correct: false },
+            { text: "Нема никаков ефект", correct: false }
+        ]},
+    { question: "Што прави селекторот 'div > p'?", answers: [
+            { text: "Селектира сите p елементи", correct: false },
+            { text: "Селектира само p елементи кои се деца на div", correct: true },
+            { text: "Селектира сите p елементи внатре во div", correct: false },
+            { text: "Селектира само p елементи со класа 'div'", correct: false }
+        ]},
+    { question: "Што прави 'overflow: hidden' во CSS?", answers: [
+            { text: "Скрива се прележаните делови од елементот", correct: true },
+            { text: "Ја поставува ширината на елементот", correct: false },
+            { text: "Секој елемент ќе се појави во нов ред", correct: false },
+            { text: "Сите елементи ќе се прикажат со рамка", correct: false }
         ]}
-
-
-
 ];
